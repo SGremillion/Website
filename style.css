@@ -101,7 +101,7 @@ html {
 *   - Footer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 body {
-  font-family: Calibri Light, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+  font-family: "Calibri Light", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
     "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
     "Verdana Ref", sans-serif;
   width: 100%;
@@ -114,7 +114,7 @@ body {
 #landing {
   top: 75px;
   background-color: #57C6B5;
-  height: 725px;
+  height: 100vh;
   text-align: center;
   color: white;
 }

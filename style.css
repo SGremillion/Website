@@ -18,6 +18,37 @@ html {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*          SMALL DEVICE FORMATTING
+* formatting for smaller devices like
+* phones and tablets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (max-width: 414px) {
+    #body {
+        width: 100%;
+    }
+    
+    #navLogo {
+        top: 8px;
+        left: 10px;
+        height: 48px;
+        width: 32px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #body {
+        width: 100%;
+    }
+    
+    #navLogo {
+        top: 8px;
+        left: 20px;
+        height: 48px;
+        width: 32px;
+    }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *             NAVIGATION BAR
 * formatting for the navigation bar that
 * stickies to the top of the page
@@ -375,37 +406,6 @@ body {
   background-color: #2E1185;
   color: white;
 }*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*          SMALL DEVICE FORMATTING
-* formatting for smaller devices like
-* phones and tablets
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (max-width: 414px) {
-    #body {
-        width: 100%;
-    }
-    
-    #navLogo {
-        top: 8px;
-        left: 10px;
-        height: 48px;
-        width: 32px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    #body {
-        width: 100%;
-    }
-    
-    #navLogo {
-        top: 8px;
-        left: 20px;
-        height: 48px;
-        width: 32px;
-    }
-}
 
 .hidden {
     display:none;

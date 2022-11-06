@@ -1,0 +1,386 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*                   SETUP
+* importing fancy font
+* setting base HTML formatting
+* setting viewport (to be mobile and IE
+*   friendly)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+html {
+  width: 100%;
+  height: auto;
+  background-color: #E3E1E4;
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+@-ms-viewport {
+  width: device-width ;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*             NAVIGATION BAR
+* formatting for the navigation bar that
+* stickies to the top of the page
+*   SG logo - returns user to top of page
+*   About me - sends user to that section
+*   Portfolio - sends user to that section
+*   Contact - sends user to that section
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* the base bar that stickies to the top of the page */
+#navBar {
+  font-family: 'Leckerli One', cursive;
+  color: white;
+  background-color: #2E1185;
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+/* the small SG logo on the left that returns the user to top of page */
+#navLogo {
+  font-family: 'Bahnschrift Condensed', sans-serif;
+  font-size: 45px;
+  color: white;
+  position: fixed;
+  top: 8px;
+  left: 28px;
+  background-color: transparent;
+  height: 58px;
+  width: 42px;
+  border: none;
+}
+
+#navLogo:hover {
+  color: #A0A0A0;
+}
+
+/* the actual small SG letters being set to a fixed position */
+#logoS {
+  position: fixed;
+  top: 5px;
+  left: 30px;
+}
+
+#logoG {
+  position: fixed;
+  top: 20px;
+  left: 44px;
+}
+
+/* formatting for the navigation bar buttons */
+#navButtons {
+  position: fixed;
+  right: 30px;
+  top: 18px;
+    
+}
+#navButtons button {
+  background-color: transparent;
+  color: white;
+  font-family: 'Leckerli One', cursive;
+  border: none;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+#navButtons button:hover {
+  color: #A0A0A0;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*             BODY CONTENT
+* formatting for the rest of the webpage
+* divided into sections:
+*   - About me
+*   - Portfolio
+*   - Contact
+*   - Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body {
+  font-family: Calibri Light, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
+    "Verdana Ref", sans-serif;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* landing section formatting */
+#landing {
+  top: 75px;
+  background-color: #57C6B5;
+  height: 725px;
+  text-align: center;
+  color: white;
+}
+
+#bigLogo {
+  padding-top: 110px;
+}
+
+#bigLogoS {
+  margin-left: -75px;
+  font-family: 'Bahnschrift Condensed', sans-serif;
+  font-size: 300px;
+}
+
+#bigLogoG {
+  margin-top: -261px;
+  margin-left: 122px;
+  font-family: 'Bahnschrift Condensed', sans-serif;
+  font-size: 300px;
+}
+
+#name {
+  font-size: 50px;
+  margin-top: -40px;
+}
+
+#description {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 23px;
+}
+
+#programmer, #designer, #artist {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#dot1, #dot2 {
+  color: #2E1185;
+}
+
+/* about section formatting */
+/*#about {
+  top: 800px;
+  height: 725px;
+  text-align: center;
+  justify-content: center;
+}
+
+#aboutMeWords {
+  float: left;
+  width: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#aboutMePicture {
+  float: right;
+  width: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#aboutMeTitle {
+  font-family: 'Leckerli One', cursive;
+  font-size: 50px;
+  color: #EE685F;
+  float: left;
+  padding-left: 50px;
+}
+
+#aboutMeParagraph {
+  color: #EE685F;
+  font-size: 25px;
+  text-align: left;
+  float: left;
+  padding-top: 10px;
+  padding-left: 50px;
+}*/
+
+/* portfolio section formatting */
+/*#portfolio {
+  top: 1525px;
+  background-color: #57C6B5;
+  height: 2175px;
+  text-align: center;
+}
+
+#portfolioTitle {
+  font-family: 'Leckerli One', cursive;
+  font-size: 50px;
+  color: white;
+  float: left;
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+#portfolioHolder {
+  width: 90%;
+  min-height: 10%;
+  margin-left: 5%;
+  position: relative;
+  top: 20px;
+  display: flex;
+}
+
+#websiteBtn {
+  width: 50%;
+  height: 100%;
+  background-color: #2E1185;
+  aspect-ratio: 3/2;
+  font-family: Calibri Light, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
+    "Verdana Ref", sans-serif;
+  color: white;
+  font-size: 25px;
+  border: none;
+}
+
+#websiteBtn:hover {
+  color: transparent;
+  background-image: url("https://cdn.glitch.global/af3c026c-2a31-448f-853b-0502ee8d8f9a/Website.png?v=1648860834829");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#javaBtn {
+  width: 50%;
+  height: 100%;
+  background-color: #EE685F;
+  aspect-ratio: 3/2;
+  font-family: Calibri Light, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
+    "Verdana Ref", sans-serif;
+  color: white;
+  font-size: 25px;
+  border: none;
+}
+
+#javaBtn:hover {
+  color: transparent;
+  background-image: url("https://cdn.glitch.global/af3c026c-2a31-448f-853b-0502ee8d8f9a/Java.png?v=1648862531677");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#website {
+  position: absolute;
+  width: 90%;
+  margin-left: 5%;
+  height: 750px;
+  top: 2150px;
+}
+
+#websiteLink {
+  margin-top: 325px;
+}
+
+#java {
+  position: absolute;
+  width: 90%;
+  margin-left: 5%;
+  height: 650px;
+  top: 2950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#javaGif {
+  max-width: 1000px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  background-image: url("https://cdn.glitch.global/af3c026c-2a31-448f-853b-0502ee8d8f9a/JavaGifImg.png?v=1648923564450");
+  background-size: cover;
+}
+
+#javaGif:hover {
+  background-image: url("https://media.giphy.com/media/LEe4Xr7HwfhcRPK20t/giphy.gif");
+  background-size: cover;
+}*/
+
+/* contact section formatting */
+/*#contact {
+  top: 3700px;
+  height: 725px;
+}
+
+#contactTitle {
+  font-family: 'Leckerli One', cursive;
+  font-size: 50px;
+  color: #EE685F;
+  float: top;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  height: 50%;
+  width: calc(100% - 50px);
+  display: flex;
+  align-items: flex-end;
+}
+
+#contactLinks {
+  float: bottom;
+  height: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: calc(100% - 100px);
+}
+
+#contactLabels {
+  display: flex;
+  justify-content: space-around;
+  color: #EE685F;
+  font-size: 25px;
+}
+
+#emailLabel, #linkedInLabel, #telegramLabel, #gitHubLabel {
+  width: 100px;
+  text-align: center;
+}
+
+#contactBtns {
+  display: flex;
+  justify-content: space-around;
+}
+
+#emailBtn, #linkedInBtn, #telegramBtn, #gitHubBtn {
+  border: none;
+  background-color: #2E1185;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#linkedInBtn {
+  color: white;
+  font-size: 35px;
+}
+
+#emailBtn:hover, #linkedInBtn:hover, #telegramBtn:hover, #gitHubBtn:hover {
+  background-color: #57C6B5;
+}
+
+#footer {
+  display: flex;
+  bottom: 0;
+  height: 75px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #2E1185;
+  color: white;
+}*/
+
+.hidden {
+  display:none;
+}

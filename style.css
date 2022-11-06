@@ -41,7 +41,7 @@ html {
 
 /* the small SG logo on the left that returns the user to top of page */
 #navLogo {
-  font-family: 'Bahnschrift Condensed', -apple-system-body, BlinkMacSystemFont, 'Avenir Next Condensed', sans-serif;
+  font-family: 'Bahnschrift Condensed', -apple-system-body, BlinkMacSystemFont, 'Futura Condensed Medium', sans-serif;
   font-size: 45px;
   color: white;
   position: fixed;

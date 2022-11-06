@@ -382,17 +382,24 @@ body {
 * phones and tablets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media screen and (max-width: 414px) {
-  #body {
-    width: 100%;
-  }
+    #body {
+        width: 100%;
+    }
+    
+    #navLogo {
+        top: 8px;
+        left: 20px;
+        height: 48px;
+        width: 32px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-  #body {
-    width: 100%;
-  }
+    #body {
+        width: 100%;
+    }
 }
 
 .hidden {
-  display:none;
+    display:none;
 }

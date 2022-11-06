@@ -387,10 +387,22 @@ body {
     }
     
     #navLogo {
-        top: 0px;
-        left: 0px;
+        top: 8px;
+        left: 10px;
         height: 48px;
         width: 32px;
+    }
+    
+    #logoS {
+        position: fixed;
+        top: 5px;
+        left: 15px;
+    }
+
+    #logoG {
+        position: fixed;
+        top: 10px;
+        left: 30px;
     }
 }
 

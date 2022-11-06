@@ -2,24 +2,19 @@
 *                   SETUP
 * importing fancy font
 * setting base HTML formatting
-* setting viewport (to be mobile and IE
-*   friendly)
+* setting viewport (to be mobile friendly)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
-
-html {
-  width: 100%;
-  height: auto;
-  background-color: #E3E1E4;
-}
 
 @viewport {
   width: device-width ;
   zoom: 1.0 ;
 }
 
-@-ms-viewport {
-  width: device-width ;
+html {
+  width: 100%;
+  height: auto;
+  background-color: #E3E1E4;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -380,6 +375,23 @@ body {
   background-color: #2E1185;
   color: white;
 }*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*          SMALL DEVICE FORMATTING
+* formatting for smaller devices like
+* phones and tablets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (max-width: 414px) {
+  #body {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #body {
+    width: 100%;
+  }
+}
 
 .hidden {
   display:none;

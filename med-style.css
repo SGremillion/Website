@@ -28,7 +28,7 @@ html {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* the base bar that stickies to the top of the page */
 #navBar {
-  font-family: 'Leckerli One', -apple-system, BlinkMacSystemFont, 'Avenir Next Condensed', cursive;
+  font-family: 'Leckerli One', cursive;
   color: white;
   background-color: #2E1185;
   position: fixed;
@@ -41,7 +41,7 @@ html {
 
 /* the small SG logo on the left that returns the user to top of page */
 #navLogo {
-  font-family: 'Bahnschrift Condensed', sans-serif;
+  font-family: 'Bahnschrift Condensed', -apple-system, BlinkMacSystemFont, 'Avenir Next Condensed', sans-serif;
   font-size: 45px;
   color: white;
   position: fixed;
